@@ -19,7 +19,6 @@ public class SqlConfig {
 
     @Bean
     public boolean instanciaDB(){
-
         if(ddl.equals("create")){
             this.dbService.instanciaDB();
         }

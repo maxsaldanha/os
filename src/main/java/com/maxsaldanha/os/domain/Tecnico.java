@@ -12,7 +12,7 @@ import java.util.List;
 public class Tecnico extends Pessoa implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-	@JsonIgnore
+	@JsonIgnore /*Anotação corriger o erro de loop do json ao retornar uma lista com lista.*/
 	@OneToMany(mappedBy = "tecnico")
 	private List<OS> list = new ArrayList<>();
 
