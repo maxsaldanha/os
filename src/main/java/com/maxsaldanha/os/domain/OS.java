@@ -37,7 +37,7 @@ public class OS {
         super();
         this.setDataAbertura(LocalDateTime.now());
         this.setPrioridade(Prioridade.BAIXA);
-        this.setStatus(Status.ABERRTO);
+        this.setStatus(Status.ABERTO);
     }
 
     public OS(Integer id, Prioridade prioridade, String descricao, Status status, Tecnico tecnico, Cliente cliente) {

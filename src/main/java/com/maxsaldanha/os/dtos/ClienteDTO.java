@@ -1,30 +1,31 @@
 package com.maxsaldanha.os.dtos;
 
-import com.maxsaldanha.os.domain.Tecnico;
+import com.maxsaldanha.os.domain.Cliente;
 import org.hibernate.validator.constraints.br.CPF;
+
 import javax.validation.constraints.NotEmpty;
 import java.io.Serializable;
 
-public class TecnicoDTO implements Serializable {
+public class ClienteDTO implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private Integer id;
+    @NotEmpty(message = "O campo é requerido")
 
-    @NotEmpty(message = "O campo Nome é requerido")
     private String nome;
     /*A validação de CPF pode ser feito de N formas basicamente com @Column(unique = true, nullable = false); está a validação é realizada no banco de dados ou
     implementação de método na classe repository; está a validação é realizada antes do banco de dados*/
     @CPF
-    @NotEmpty(message = "O campo CPF é requerido")
+    @NotEmpty(message = "O campo é requerido")
     private String cpf;
 
-    @NotEmpty(message = "O campo telefone é requerido")
+    @NotEmpty(message = "O campo é requerido")
     private String telefone;
 
-    public TecnicoDTO() {
+    public ClienteDTO() {
     }
 
-    public TecnicoDTO(Tecnico obj) {
+    public ClienteDTO(Cliente obj) {
         this.id = obj.getId();
         this.nome = obj.getNome();
         this.cpf = obj.getCpf();

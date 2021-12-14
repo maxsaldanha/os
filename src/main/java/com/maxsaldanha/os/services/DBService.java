@@ -27,7 +27,7 @@ public class DBService {
 
         Tecnico t1 = new Tecnico(null, "Maxuel Saldanha da Silva","076.886.717-79","(21) 980776367");
         Tecnico t2 = new Tecnico(null, "Lucas Carvalho Lima", "143.987.950-81","(21) 986578454");
-        Cliente c1 = new Cliente (null,"Adilson Barbosa", "076.886.717-79","(21) 982775459");
+        Cliente c1 = new Cliente (null,"Adilson Barbosa", "912.244.140-98","(21) 982775459");
         OS os1 = new OS(null, Prioridade.ALTA,"TEsdet", Status.ANDAMENTO, t1, c1);
 
         t1.getList().add(os1);

@@ -5,8 +5,8 @@ public enum Prioridade {
     MEDIA(1,"MEDIA"),
     ALTA(2,"ALTA");
 
-    private Integer cod;
-    private String descricao;
+    private final Integer cod;
+    private final String descricao;
 
    Prioridade(Integer cod, String descricao) {
         this.cod = cod;
