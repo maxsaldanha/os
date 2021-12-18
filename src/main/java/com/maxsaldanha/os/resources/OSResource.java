@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
 @RequestMapping (value = "/os")
 public class OSResource {
 
-    @Autowired
+    @Autowired /*Anotação para injetar */
     private OSService service;
 
     @GetMapping (value = "/{id}")
