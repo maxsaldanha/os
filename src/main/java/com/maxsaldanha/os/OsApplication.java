@@ -21,8 +21,4 @@ public class OsApplication  {
 	public static void main(String[] args) {
 		SpringApplication.run(OsApplication.class, args);
 	}
-	@RequestMapping("/")
-	String index() {
-		return "index";
-	}
 }
