@@ -14,6 +14,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /*A classe Resource, ou recursos, é responsável pelo CRUD */
+@CrossOrigin("*")
 @RestController
 @RequestMapping(value = "/clientes")
 public class ClienteResource {

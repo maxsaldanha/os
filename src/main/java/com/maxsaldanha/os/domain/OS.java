@@ -1,10 +1,8 @@
 package com.maxsaldanha.os.domain;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.maxsaldanha.os.domain.enums.Prioridade;
 import com.maxsaldanha.os.domain.enums.Status;
-import org.hibernate.annotations.ManyToAny;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
@@ -15,10 +13,12 @@ public class OS {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @JsonFormat(pattern = "dd/MM/yyyy HH:mm")
+    @JsonFormat(pattern = "dd/MM/yyyy HH:mm:ss")
     private LocalDateTime dataAbertura;
 
-    @JsonFormat(pattern = "dd/MM/yyyy HH:mm")
+    /* Obter o timestamp ZonedDateTime ;*/
+
+    @JsonFormat(pattern = "dd/MM/yyyy HH:mm:ss")
     private LocalDateTime dataFechamento;
 
     private Integer prioridade;
